@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+
+        <title>Stock Manager</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Stock Manager</h1>
+        </header>
+
+        <div class="totals">
+            <p>Stock Quantity: <span class="total-quantity">0</span></p>
+            <p>Stock Value: <span class="total-price">£0.00</span></p>
+        </div>
+
+        <div class="input-row">
+            <input class="input-name" type="text" placeholder="Product name">
+            <input class="input-quantity" type="number" placeholder="Quantity">
+            <input class="input-price" type="number" placeholder="Price">
+            <button class="add-item"><ion-icon name="add-circle-outline"></ion-icon></button>
+        </div>
+
+        <div class="products-list">
+            <!-- <div class="item" id="1">
+                <div class="product-name">Cucumbers</div>
+                <div class="product-quantity">50</div>
+                <div class="product-price">£1.20</div>
+                <div class="product-delete">
+                    <button><ion-icon name="trash"></ion-icon></button>
+                </div>
+            </div> -->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th> --- </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr class="item">
+                        <td>Name</td>
+                        <td>Name</td>
+                        <td>Name</td>
+                        <td><button><ion-icon name="trash"></ion-icon></button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="./JS/app.js"></script>
+    </body>
+</html>

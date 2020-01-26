@@ -1,0 +1,148 @@
+$color-green: #7EBC89;
+$color-green-light: #C1DBB3;
+
+$color-grey: #EFEFEF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 40px 0;
+    background-color: $color-green;
+    color: #fff;
+
+    h1 {
+        text-align: center;
+        font-weight: 400;
+    }
+}
+
+.totals {
+    padding: 10px 0;
+    text-align: center;
+    background-color: $color-green-light;
+
+    p {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 4px;
+        background-color: #fff;
+        color: $color-green;
+    }
+}
+
+.input-row {
+    padding: 10px 0;
+    text-align: center;
+    background-color: $color-grey;
+
+    input {
+        padding: 7.5px 0 7.5px 7.5px;
+        font-size: 16px;
+        border: 1px solid $color-grey;
+        border-radius: 2px;
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        vertical-align: middle;
+
+        ion-icon {
+            height: 100%;
+            width: 100%;
+            color: $color-green;
+        }
+    }
+}
+
+.products-list {
+    // .item {
+    //     padding: 15px 0 15px 5px;
+
+    //     &:nth-child(even) {
+    //         background-color: #2623B2;
+    //         color: #fff;
+    //     }
+
+    //     div {
+    //         display: inline-block;
+    //     }
+
+    //     button {
+    //         width: 20px;
+    //         height: 20px;
+
+    //         ion-icon {
+    //             height: 100%;
+    //             width: 100%;
+    //         }
+    //     }
+    // }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        thead {
+            th {
+                background-color: $color-green;
+                color: #fff;
+                padding: 10px 0;
+            }
+        }
+
+        tbody {
+            .item {
+                font-size: 80%;
+
+                &:nth-child(even) {
+                    background-color: $color-green-light;
+                    color: #fff;
+
+                    td {
+                        button {
+                            ion-icon {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                td {
+                    padding: 7.5px 0;
+                    text-align: center;
+
+                    button {
+                        height: 30px;
+                        width: 30px;
+                        border: none;
+                        background: none;
+                        vertical-align: middle;
+                        outline: none;
+
+                        ion-icon {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
